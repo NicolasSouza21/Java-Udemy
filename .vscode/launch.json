@@ -1,0 +1,30 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Exercicios",
+            "request": "launch",
+            "mainClass": "Exercicios",
+            "projectName": "Java - Udemy_9ae5bf3b"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "type": "java",
+            "name": "Horas",
+            "request": "launch",
+            "mainClass": "Horas",
+            "projectName": "Java - Udemy_9ae5bf3b",
+            "console": "integratedTerminal"
+        }
+    ]
+}

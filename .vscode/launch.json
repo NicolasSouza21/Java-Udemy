@@ -8,6 +8,13 @@
             "type": "java",
             "name": "Main",
             "request": "launch",
+            "mainClass": "LacosRepeticao.Main",
+            "projectName": "Java-Udemy_1619ac6c"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
             "mainClass": "SwitchCase.Main",
             "projectName": "Java-Udemy_1619ac6c"
         },

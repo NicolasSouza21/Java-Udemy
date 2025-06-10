@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "SwitchCase.Main",
+            "projectName": "Java-Udemy_1619ac6c"
+        },
+        {
+            "type": "java",
             "name": "Exercicios",
             "request": "launch",
             "mainClass": "Exercicios",

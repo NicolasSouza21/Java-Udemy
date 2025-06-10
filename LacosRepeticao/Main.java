@@ -9,7 +9,8 @@ public class Main {
         // exercicios.contarUm();
         //exercicios.tabuada();
         // exercicios.somarCinco();
-        exercicios.menosUm();
+        // exercicios.menosUm();
+        exercicios.fatorial();
     }
     
 }

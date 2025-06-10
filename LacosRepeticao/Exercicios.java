@@ -102,12 +102,33 @@ public class Exercicios {
         int n;
         System.out.println("Digite um número");
         n = sc.nextInt();
+        int sub = n;
+
         while (n != 0) {
+            n = n -1;
             
-            System.out.println(n - 1);
+            System.out.println(n);
             
             
         }
+
+    }
+
+    public void fatorial(){
+        int n;
+        int fatorial = 1;
+        System.out.println("Digite um número");
+        n = sc.nextInt();
+        for (int i = n; i >= 1; i--) {
+            fatorial = fatorial * i;
+            
+            
+
+
+            
+        }
+        System.out.println(fatorial);
+
 
     }
 }

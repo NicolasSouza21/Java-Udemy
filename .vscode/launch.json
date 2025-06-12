@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CarroMain",
+            "request": "launch",
+            "mainClass": "POO.Exercicios.Acelerar_Carro.CarroMain",
+            "projectName": "Java-Udemy_1619ac6c"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "POO.Main",
+            "projectName": "Java-Udemy_1619ac6c"
+        },
+        {
+            "type": "java",
             "name": "Main",
             "request": "launch",
             "mainClass": "LacosRepeticao.Main",

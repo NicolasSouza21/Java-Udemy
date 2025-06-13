@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "BancoMain",
+            "request": "launch",
+            "mainClass": "POO.Exercicios.Banco.BancoMain",
+            "projectName": "Java-Udemy_1619ac6c"
+        },
+        {
+            "type": "java",
             "name": "CarroMain",
             "request": "launch",
             "mainClass": "POO.Exercicios.Acelerar_Carro.CarroMain",

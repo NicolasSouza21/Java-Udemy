@@ -6,45 +6,46 @@ public class CarroMain {
 
     public static void main(String[] args) {
 
-        CarroController cc = new CarroController();
-        CarroModelo cm = new CarroModelo();
-
         Scanner sc = new Scanner(System.in);
-        
-       System.out.println("Selecione sua opção \n");
-       int opcao;
+        CarroModelo cm = new CarroModelo();         // Criado uma única instância
+        CarroController cc = new CarroController(cm); // Passada para a controller
 
-       do {
-        
-         
-        
-       
-       System.out.println("1. Cadastrar informações \n" +
-                            "2. Ver informações \n " +
-                            "3. Acelerar \n" +
-                            "4. Frear \n " +
-                            "5. Sair \n");
-        opcao = sc.nextInt();
+        int opcao;
 
-        if (opcao == 3) {
-            cc.acelerar();
-            System.out.println("Sua velocidade é " + cm.velocidade);
+        do {
+            System.out.println("\nSelecione sua opção:");
+            System.out.println("1. Cadastrar informações");
+            System.out.println("2. Ver informações");
+            System.out.println("3. Acelerar");
+            System.out.println("4. Frear");
+            System.out.println("5. Sair");
+            System.out.print("Opção: ");
+            opcao = sc.nextInt();
 
-            
-        }else if (opcao == 2){
-            cc.mostrarInfo();
+            switch (opcao) {
+                case 1:
+                    cc.cadastrarInfo();
+                    break;
+                case 2:
+                    cc.mostrarInfo();
+                    break;
+                case 3:
+                    cc.acelerar(30);
+                    System.out.println("Velocidade atual: " + cm.velocidade + " km/h");
+                    break;
+                case 4:
+                    cc.frear(10); 
+                    System.out.println("Velocidade atual: " + cm.velocidade + " km/h");
+                    break;
+                case 5:
+                    System.out.println("Encerrando...");
+                    break;
+                default:
+                    System.out.println("Opção inválida.");
+            }
 
+        } while (opcao != 5);
 
-        }else if (opcao == 1) {
-            cc.cadastrarInfo();
-            
-        }else if (opcao == 4){
-            cc.frear();
-            System.out.println("Sua velocidade é " + cm.velocidade);
-        }
-
-
-    }while (opcao != 5);
-    
-}
+        sc.close();
+    }
 }

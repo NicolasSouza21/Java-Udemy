@@ -4,7 +4,7 @@ public class AlunoModel {
 
     String nome;
     double nota;
-    
+
 
 
     

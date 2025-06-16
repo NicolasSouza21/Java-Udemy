@@ -106,9 +106,27 @@ public class BancoController {
     }
 
     public void saque(double valorSaque) {
+
         System.out.println("Quanto você deseja sacar");
         valorSaque = sc.nextDouble();
-        bm.saldo -= valorSaque;
+
+        if (bm.saldo < valorSaque) {
+            System.out.println("Saldo insuficiente");
+
+            
+            
+        }if (bm.saldo > valorSaque) {
+
+            
+            
+            bm.saldo -= valorSaque;
+            
+        }else{
+            System.out.println("Digite um valor válido");
+        
+        }
+       
+        
     }
 
     public void verSaldo(int i) {

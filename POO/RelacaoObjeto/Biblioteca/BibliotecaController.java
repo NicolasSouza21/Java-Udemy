@@ -62,10 +62,10 @@ public class BibliotecaController {
     sc.nextLine();  // Consumir a quebra de linha
 
     System.out.println("Digite o nome do autor:");
-    String nomeAutor = sc.nextLine();
+    String nomeAutor = sc.next();
 
     System.out.println("Digite a nacionalidade do autor:");
-    String nacionalidade = sc.nextLine();
+    String nacionalidade = sc.next();
 
     Autor autor = new Autor(nacionalidade, nomeAutor);
     Livro livro = new Livro(titulo, ano, autor);

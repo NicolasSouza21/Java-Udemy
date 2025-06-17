@@ -6,6 +6,7 @@ public class BibliotecaController {
 
     Scanner sc = new Scanner(System.in);
     Livro livro = null;
+    Autor autor;
 
     public void abrir() {
         int op;
@@ -26,7 +27,7 @@ public class BibliotecaController {
 
 
                 case 1:
-                    livro = criarLivro(null, op, null, null);
+                    livro = criarLivro();
 
                     break;
 
@@ -50,22 +51,26 @@ public class BibliotecaController {
         } while (op != 3);
     }
 
-    public Livro criarLivro(String titulo, int anoPublicacao, String nome, String nacionalidade) {
+    public Livro criarLivro() {
 
-        Autor autor = new Autor(nacionalidade, nome);
 
-        Livro livro = new Livro(titulo, anoPublicacao, autor);
+        System.out.println("Digite o nome do livro:");
+    String titulo = sc.nextLine();
 
-        System.out.println("Digite o nome do livro");
-        livro.setTitulo(sc.next());
-        System.out.println("Digite o  ano da publicação do livro ");
-        livro.setAnoPublicacao(sc.nextInt());
-        System.out.println("Digite o nome do autor");
-        autor.setNome(sc.next());
-        System.out.println("Digite a nacionalidade do autor");
-        autor.setNacionalidade(sc.next());
+    System.out.println("Digite o ano da publicação:");
+    int ano = sc.nextInt();
+    sc.nextLine();  // Consumir a quebra de linha
 
-        return livro;
+    System.out.println("Digite o nome do autor:");
+    String nomeAutor = sc.nextLine();
+
+    System.out.println("Digite a nacionalidade do autor:");
+    String nacionalidade = sc.nextLine();
+
+    Autor autor = new Autor(nacionalidade, nomeAutor);
+    Livro livro = new Livro(titulo, ano, autor);
+
+    return livro;
 
     }
 

@@ -10,7 +10,7 @@ public class ProdutosControll {
 
     public void cadastrarProduto(){
         System.out.println("Digite o nome do produto");
-        pm.setNome(sc.next());;
+        pm.setNome(sc.next());
         System.out.println("Digite o preço dos produtos");
         pm.setPreco(sc.nextDouble());
         System.out.println("Digite a quantidade");
@@ -48,7 +48,7 @@ public class ProdutosControll {
         System.out.println("Quanto você deseja repor de estoque \n");
         int repoEstoque = sc.nextInt();
         pm.setQuantidade(pm.getQuantidade() + repoEstoque);
-        System.out.println("Você repôs " + pm.getQuantidade());
+        System.out.println("Você repôs " + repoEstoque);
 
 
             

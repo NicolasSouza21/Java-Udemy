@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "POO.RelacaoObjeto.Biblioteca.Main",
+            "projectName": "Java-Udemy_1619ac6c"
+        },
+        {
+            "type": "java",
             "name": "ProdutoMain",
             "request": "launch",
             "mainClass": "POO.Produtos.ProdutoMain",
